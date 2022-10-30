@@ -49,3 +49,6 @@ async def on_message(message):
                                         view_channel=True ,
                                         read_messages=True)
             await message.author.send(embed=em1)
+
+
+
