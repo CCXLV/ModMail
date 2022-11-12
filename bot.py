@@ -47,4 +47,4 @@ class ModMailBot(commands.Bot):
 
 client = ModMailBot()
 client.remove_command("help")
-client.run('MTAzNzc5NjE4NjM5MzkzNjAyMg.GJWrHw.t-eFqUQy1FphC229m4uamM-597gS4_72FWUEjg')                      
+client.run('token')                      
