@@ -39,8 +39,8 @@ class ModMail(commands.Cog):
     async def on_message(self, message: discord.Message):
 
         ticket_name = random.randint(1000, 9999)
-        guild = self.client.get_guild(1024690969100156989)
-        category = get(guild.categories, id=1035934640483094601)
+        guild = self.client.get_guild(1024690969100156989) #Put your guild id here
+        category = get(guild.categories, id=1035934640483094601) #Put your category id here
 
         if message.guild is None:
             if message.content == "!help":
