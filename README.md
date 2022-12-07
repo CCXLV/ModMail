@@ -1,2 +1,2 @@
 
-Simple ModMail Discord Bot for community servers
+Simple ModMail Discord Bot for community servers.
