@@ -69,6 +69,5 @@ class ModMailBot(commands.Bot):
 
 
 
-client = ModMailBot()
-client.remove_command("help")
-client.run('token')                      
+bot = ModMailBot()
+bot.run()                      
