@@ -33,7 +33,6 @@ class ModMail(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-    
 
     @commands.hybrid_group(fallback='get')
     async def help(self, ctx: discord.Message):    
