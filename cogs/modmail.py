@@ -72,7 +72,7 @@ class ModMail(commands.Cog):
                                           read_messages=True)
             await ctx.author.send(embed=em1)
         elif:
-            await ctx.send('DM ``?help contact``')
+            await ctx.send('DM ``?help contact``.')
     
      
 
