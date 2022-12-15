@@ -79,13 +79,17 @@ class ModMail(commands.Cog):
     async def delete(self, ctx: Context):
         channel = ctx.channel
         modlog_channel = self.bot.get_channel(1035981357333102613)
+        modlog_category = get(guild.categories, id=1035934640483094601)
 
         embed = discord.Embed(title='Channel deleted', color=0xFF0000)
         embed.description = f'`Channel {channel.name}` has been deleted by {ctx.author.mention} (`{ctx.author.id}`)'
         embed.timestamp = datetime.utcnow()
-
-        await channel.delete()
-        await modlog_channel.send(embed=embed)
+         
+        if ctx.channel.parent is modlog_category and not modlog_channel:
+            await channel.delete()
+            await modlog_channel.send(embed=embed)
+        else:
+            return
 
      
 
