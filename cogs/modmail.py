@@ -66,12 +66,12 @@ class ModMail(commands.Cog):
             embed1 = await channel.send(embed=em2)
 
             moderation_role = get(guild.roles, id=1024696145445924914)
-            await channel.send(message.author.mention + " " + moderation_role.mention)
-            await channel.set_permissions(message.author, 
+            await channel.send(ctx.author.mention + " " + moderation_role.mention)
+            await channel.set_permissions(ctx.author, 
                                           view_channel=True,
                                           read_messages=True)
             await ctx.author.send(embed=em1)
-        elif:
+        else:
             await ctx.send('DM ``?help contact`` in order to contact staff.')
     
      
