@@ -34,7 +34,7 @@ class ModMail(commands.Cog):
         self.bot = bot
 
 
-    @commands.hybrid_group(fallback='get')
+    @commands.hybrid_group()
     async def help(self, ctx: discord.Message):    
 
         if ctx.guild is None:
