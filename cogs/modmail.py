@@ -42,7 +42,7 @@ class ModMail(commands.Cog):
                 
             await ctx.author.send(embed=embed)
         else:
-            await ctx.send('DM ``?help`` for more info.')
+            await ctx.send('DM `?help` for more info.')
 
     @help.command()
     async def contact(self, ctx: discord.Message):
