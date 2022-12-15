@@ -48,8 +48,8 @@ class ModMail(commands.Cog):
     @help.command()
     async def contact(self, ctx: discord.Message):
         ticket_name = random.randint(1000, 9999)
-        guild = self.bot.get_guild(1024690969100156989) #Put your guild id here
-        category = get(guild.categories, id=1035934640483094601) #Put your category id here
+        guild = self.bot.get_guild(1024690969100156989) # < - takes guild ID as a parameter.
+        category = get(guild.categories, id=1035934640483094601) # < - takes category ID as a parameter.
 
         if ctx.guild is None:
             channel = await guild.create_text_channel(name=ticket_name, category=category)
