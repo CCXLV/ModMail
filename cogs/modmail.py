@@ -28,7 +28,7 @@ class ModMail(commands.Cog):
         guild = self.bot.get_guild(1024690969100156989) # < - takes guild ID as a parameter.
         category = get(guild.categories, id=1035934640483094601) # < - takes category ID as a parameter.
     
-        close_channel = Button(emoji='🔒', label='Close channel', style=discord.ButtonStyle.blurple)
+        close_channel = Button(emoji='🔒', label='Close', style=discord.ButtonStyle.blurple)
 
         
         async def close_channel_callback(interaction: discord.Interaction):
