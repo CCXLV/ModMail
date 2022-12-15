@@ -38,11 +38,11 @@ class ModMail(commands.Cog):
     async def help(self, ctx: discord.Message):    
 
         if ctx.guild is None:
-            embed = discord.Embed(title='ModMail', description='DM ``!help contact` to create a channel and contact moderation staff.', color=0x5e7bdd)
+            embed = discord.Embed(title='ModMail', description='DM ``?help contact` to create a channel and contact moderation staff.', color=0x5e7bdd)
                 
             await ctx.author.send(embed=embed)
         elif:
-            await ctx.send('DM ``!help`` for more info.')
+            await ctx.send('DM ``?help`` for more info.')
 
     @help.command()
     async def contact(self, ctx: discord.Message):
@@ -72,7 +72,7 @@ class ModMail(commands.Cog):
                                           read_messages=True)
             await ctx.author.send(embed=em1)
         elif:
-            await ctx.send('DM ``help contact``')
+            await ctx.send('DM ``?help contact``')
     
      
 
