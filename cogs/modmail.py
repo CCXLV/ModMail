@@ -41,7 +41,7 @@ class ModMail(commands.Cog):
             embed = discord.Embed(title='ModMail', description='DM ``?help contact` to create a channel and contact moderation staff.', color=0x5e7bdd)
                 
             await ctx.author.send(embed=embed)
-        elif:
+        else:
             await ctx.send('DM ``?help`` for more info.')
 
     @help.command()
