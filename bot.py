@@ -56,10 +56,6 @@ class ModMailBot(commands.Bot):
         if message.author.bot:
             return
 
-        if message.guild is None:
-            if message.content != None:
-                return await message.author.send("Type *?help* to contact staff")
-        
         await self.process_commands(message)
 
         
