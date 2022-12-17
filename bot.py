@@ -63,4 +63,5 @@ class ModMailBot(commands.Bot):
 
 
 bot = ModMailBot()
+bot.remove_command('help')
 bot.run()                      
