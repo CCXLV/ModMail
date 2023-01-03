@@ -1,2 +1,2 @@
 
-Simple ModMail Discord Bot for my private Discord server.
+ModMail Discord bot for That's What We Do Discord server.
