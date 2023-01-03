@@ -5,10 +5,6 @@ import logging
 log = logging.getLogger(__name__)
 
 
-extensions = (
-    'cogs.modmail',
-)
-
 class ModMailBot(commands.Bot):
     def __init__(self):
         intents = discord.Intents.all()
@@ -22,11 +18,10 @@ class ModMailBot(commands.Bot):
     async def setup_hook(self) -> None:
         print("ModMail Bot is running")
 
-        for extension in extensions:
-            try:
-                await self.load_extension(extension)
-            except Exception as e:
-                log.exception('Failed to load extension %s.', extension)
+        try:
+            await self.load_extension('bot.cogs.modmail')
+        except Exception as e:
+            log.exception('Failed to load extension %s.', e)
     
     async def on_message(self, message):
         if message.author.bot:
