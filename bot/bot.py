@@ -35,9 +35,3 @@ class ModMailBot(commands.Bot):
         await self.process_commands(message)
 
         
-
-
-
-bot = ModMailBot()
-bot.remove_command('help')
-bot.run()                      
